@@ -6,7 +6,8 @@ DATABASE_NAME="test";
 
 let sequelize = new Sequelize(DATABASE_NAME, DATABASE_USER, DATABASE_PASSWORD, {
     host: DATABASE_HOST,
-    dialect: 'mysql'
+    dialect: 'mysql',
+    port:'13306'
 });
 
 class User extends Model {}
