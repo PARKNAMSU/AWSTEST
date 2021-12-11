@@ -1,7 +1,11 @@
 const { Sequelize, DataTypes, Model } = require('sequelize');
+DATABASE_HOST="database-ns.cuopzade2cgu.ap-northeast-2.rds.amazonaws.com";
+DATABASE_USER="admin";
+DATABASE_PASSWORD="slek4173";
+DATABASE_NAME="test";
 
-let sequelize = new Sequelize('test', 'root', '1234', {
-    host: 'localhost',
+let sequelize = new Sequelize(DATABASE_NAME, DATABASE_USER, DATABASE_PASSWORD, {
+    host: DATABASE_HOST,
     dialect: 'mysql'
 });
 
