@@ -15,12 +15,4 @@ app.get('/', (req, res) => {
     res.send('Hellow World!!');
 });
 
-https.createServer(
-    {
-        key: fs.readFileSync(__dirname + '/key.pem', 'utf-8'),
-        cert: fs.readFileSync(__dirname + '/cert.pem', 'utf-8'),
-    },
-    app
-).listen(443);
-
-//app.listen(80, () => console.log('localhost:5000 opened!!'));
+app.listen(80, () => console.log('localhost:5000 opened!!'));
