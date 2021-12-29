@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 
-app.use(cookieParser());
 app.use(express.json());
 app.use(express.text());
 app.get("/", (req, res) => {
