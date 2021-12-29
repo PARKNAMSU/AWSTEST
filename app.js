@@ -8,7 +8,7 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.text());
 app.get("/", (req, res) => {
-  res.send("Hellow Pipeline!!!!!");
+  res.send("Hellow Pipeline!!!!!!!");
 });
 
 app.listen(80, () => console.log("localhost:80 change opened!!"));
